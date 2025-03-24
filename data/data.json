@@ -1,0 +1,155 @@
+{
+  "country": "Chile",
+  "data": [
+    [
+      {
+        "idCabecalho": 1,
+        "idJ": 1,
+        "priceAto": 1,
+        "priceJ": 2,
+        "article": "Arroz"
+      },
+      {
+        "idCabecalho": 2,
+        "idJ": 2,
+        "priceAto": 5,
+        "priceJ": 3,
+        "article": "Feijão"
+      },
+      {
+        "idCabecalho": 3,
+        "idJ": 3,
+        "priceAto": 8,
+        "priceJ": 6,
+        "article": "Macarrão"
+      },
+      {
+        "idCabecalho": 4,
+        "idJ": 4,
+        "priceAto": 2,
+        "priceJ": 4,
+        "article": "Carne"
+      },
+      {
+        "idCabecalho": 5,
+        "idJ": 5,
+        "priceAto": 7,
+        "priceJ": 5,
+        "article": "Frango"
+      },
+      {
+        "idCabecalho": 6,
+        "idJ": 6,
+        "priceAto": 3,
+        "priceJ": 7,
+        "article": "Peixe"
+      },
+      {
+        "idCabecalho": 7,
+        "idJ": 7,
+        "priceAto": 4,
+        "priceJ": 8,
+        "article": "Leite"
+      },
+      {
+        "idCabecalho": 8,
+        "idJ": 8,
+        "priceAto": 6,
+        "priceJ": 9,
+        "article": "Ovos"
+      },
+      {
+        "idCabecalho": 9,
+        "idJ": 9,
+        "priceAto": 9,
+        "priceJ": 10,
+        "article": "Queijo"
+      },
+      {
+        "idCabecalho": 10,
+        "idJ": 10,
+        "priceAto": 10,
+        "priceJ": 11,
+        "article": "Pão"
+      },
+      {
+        "idCabecalho": 11,
+        "idJ": 11,
+        "priceAto": 11,
+        "priceJ": 12,
+        "article": "Manteiga"
+      },
+      {
+        "idCabecalho": 12,
+        "idJ": 12,
+        "priceAto": 12,
+        "priceJ": 13,
+        "article": "Azeite"
+      },
+      {
+        "idCabecalho": 13,
+        "idJ": 13,
+        "priceAto": 13,
+        "priceJ": 14,
+        "article": "Sal"
+      },
+      {
+        "idCabecalho": 14,
+        "idJ": 14,
+        "priceAto": 14,
+        "priceJ": 15,
+        "article": "Açúcar"
+      },
+      {
+        "idCabecalho": 15,
+        "idJ": 15,
+        "priceAto": 15,
+        "priceJ": 16,
+        "article": "Café"
+      },
+      {
+        "idCabecalho": 16,
+        "idJ": 16,
+        "priceAto": 16,
+        "priceJ": 17,
+        "article": "Chá"
+      },
+      {
+        "idCabecalho": 17,
+        "idJ": 17,
+        "priceAto": 17,
+        "priceJ": 18,
+        "article": "Suco"
+      },
+      {
+        "idCabecalho": 18,
+        "idJ": 18,
+        "priceAto": 18,
+        "priceJ": 19,
+        "article": "Refrigerante"
+      },
+      {
+        "idCabecalho": 19,
+        "idJ": 19,
+        "priceAto": 19,
+        "priceJ": 20,
+        "article": "Água"
+      },
+      {
+        "idCabecalho": 20,
+        "idJ": 20,
+        "priceAto": 20,
+        "priceJ": 21,
+        "article": "Vinho"
+      }
+    ]
+    {
+      "name": "Azucar",
+      "price": 2.0
+    },
+    {
+      "name": "Aceite",
+      "price": 3.0
+    }
+  ]
+}
