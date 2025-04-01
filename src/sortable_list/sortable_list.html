@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortable Lists</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 300px;
+      border: 1px solid #ccc;
+      min-height: 200px;
+      background-color: #f9f9f9;
+    }
+    .list li {
+      padding: 10px;
+      margin: 5px 0;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: grab;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul id="list-1" class="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+    <ul id="list-2" class="list">
+      <!-- Empty list to drop items -->
+    </ul>
+  </div>
+  <script>
+    const list1 = document.getElementById('list-1');
+    const list2 = document.getElementById('list-2');
+
+    new Sortable(list1, {
+      group: 'shared', // Enable cross-list dragging
+      animation: 150,
+    });
+
+    new Sortable(list2, {
+      group: 'shared', // Enable cross-list dragging
+      animation: 150,
+    });
+  </script>
+</body>
+</html>

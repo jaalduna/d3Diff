@@ -1,0 +1,302 @@
+[
+  {
+    "date": "2021-01",
+    "price_h": 100,
+    "price_j": 120
+  },
+  {
+    "date": "2021-02",
+    "price_h": 400,
+    "price_j": 125
+  },
+  {
+    "date": "2021-03",
+    "price_h": 110,
+    "price_j": 130
+  },
+  {
+    "date": "2021-04",
+    "price_h": 115,
+    "price_j": 135
+  },
+  {
+    "date": "2021-05",
+    "price_h": 120,
+    "price_j": 140
+  },
+  {
+    "date": "2021-06",
+    "price_h": 125,
+    "price_j": 145
+  },
+  {
+    "date": "2021-07",
+    "price_h": 130,
+    "price_j": 150
+  },
+  {
+    "date": "2021-08",
+    "price_h": 135,
+    "price_j": 155
+  },
+  {
+    "date": "2021-09",
+    "price_h": 140,
+    "price_j": 160
+  },
+  {
+    "date": "2021-10",
+    "price_h": 145,
+    "price_j": 165
+  },
+  {
+    "date": "2021-11",
+    "price_h": 150,
+    "price_j": 170
+  },
+  {
+    "date": "2021-12",
+    "price_h": 155,
+    "price_j": 175
+  },
+  {
+    "date": "2022-01",
+    "price_h": 160,
+    "price_j": 180
+  },
+  {
+    "date": "2022-02",
+    "price_h": 165,
+    "price_j": 185
+  },
+  {
+    "date": "2022-03",
+    "price_h": 170,
+    "price_j": 190
+  },
+  {
+    "date": "2022-04",
+    "price_h": 175,
+    "price_j": 195
+  },
+  {
+    "date": "2022-05",
+    "price_h": 180,
+    "price_j": 200
+  },
+  {
+    "date": "2022-06",
+    "price_h": 185,
+    "price_j": 205
+  },
+  {
+    "date": "2022-07",
+    "price_h": 190,
+    "price_j": 210
+  },
+  {
+    "date": "2022-08",
+    "price_h": 195,
+    "price_j": 215
+  },
+  {
+    "date": "2022-09",
+    "price_h": 200,
+    "price_j": 220
+  },
+  {
+    "date": "2022-10",
+    "price_h": 205,
+    "price_j": 225
+  },
+  {
+    "date": "2022-11",
+    "price_h": 210,
+    "price_j": 230
+  },
+  {
+    "date": "2022-12",
+    "price_h": 215,
+    "price_j": 235
+  },
+  {
+    "date": "2023-01",
+    "price_h": 220,
+    "price_j": 240
+  },
+  {
+    "date": "2023-02",
+    "price_h": 225,
+    "price_j": 245
+  },
+  {
+    "date": "2023-03",
+    "price_h": 230,
+    "price_j": 250
+  },
+  {
+    "date": "2023-04",
+    "price_h": 235,
+    "price_j": 255
+  },
+  {
+    "date": "2023-05",
+    "price_h": 240,
+    "price_j": 260
+  },
+  {
+    "date": "2023-06",
+    "price_h": 245,
+    "price_j": 265
+  },
+  {
+    "date": "2023-07",
+    "price_h": 250,
+    "price_j": 270
+  },
+  {
+    "date": "2023-08",
+    "price_h": 255,
+    "price_j": 275
+  },
+  {
+    "date": "2023-09",
+    "price_h": 260,
+    "price_j": 280
+  },
+  {
+    "date": "2023-10",
+    "price_h": 265,
+    "price_j": 285
+  },
+  {
+    "date": "2023-11",
+    "price_h": 270,
+    "price_j": 290
+  },
+  {
+    "date": "2023-12",
+    "price_h": 275,
+    "price_j": 295
+  },
+  {
+    "date": "2024-01",
+    "price_h": 280,
+    "price_j": 300
+  },
+  {
+    "date": "2024-02",
+    "price_h": 285,
+    "price_j": 305
+  },
+  {
+    "date": "2024-03",
+    "price_h": 290,
+    "price_j": 310
+  },
+  {
+    "date": "2024-04",
+    "price_h": 295,
+    "price_j": 315
+  },
+  {
+    "date": "2024-05",
+    "price_h": 300,
+    "price_j": 320
+  },
+  {
+    "date": "2024-06",
+    "price_h": 305,
+    "price_j": 325
+  },
+  {
+    "date": "2024-07",
+    "price_h": 310,
+    "price_j": 330
+  },
+  {
+    "date": "2024-08",
+    "price_h": 315,
+    "price_j": 335
+  },
+  {
+    "date": "2024-09",
+    "price_h": 320,
+    "price_j": 340
+  },
+  {
+    "date": "2024-10",
+    "price_h": 325,
+    "price_j": 345
+  },
+  {
+    "date": "2024-11",
+    "price_h": 330,
+    "price_j": 350
+  },
+  {
+    "date": "2024-12",
+    "price_h": 335,
+    "price_j": 355
+  },
+  {
+    "date": "2025-01",
+    "price_h": 340,
+    "price_j": 360
+  },
+  {
+    "date": "2025-02",
+    "price_h": 345,
+    "price_j": 365
+  },
+  {
+    "date": "2025-03",
+    "price_h": 350,
+    "price_j": 370
+  },
+  {
+    "date": "2025-04",
+    "price_h": 355,
+    "price_j": 375
+  },
+  {
+    "date": "2025-05",
+    "price_h": 360,
+    "price_j": 380
+  },
+  {
+    "date": "2025-06",
+    "price_h": 365,
+    "price_j": 385
+  },
+  {
+    "date": "2025-07",
+    "price_h": 370,
+    "price_j": 390
+  },
+  {
+    "date": "2025-08",
+    "price_h": 375,
+    "price_j": 395
+  },
+  {
+    "date": "2025-09",
+    "price_h": 380,
+    "price_j": 400
+  },
+  {
+    "date": "2025-10",
+    "price_h": 385,
+    "price_j": 405
+  },
+  {
+    "date": "2025-11",
+    "price_h": 390,
+    "price_j": 410
+  },
+  {
+    "date": "2025-12",
+    "price_h": 395,
+    "price_j": 415
+  }
+]

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Series Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h1>Time Series Chart</h1>
+    <div id="chart"></div>
+    <script>
+        async function drawChart() {
+            // Load data from data.json
+            const data = await d3.json("data.json");
+
+            // Parse the date
+            const parseDate = d3.timeParse("%Y-%m");
+          data.forEach(d => d.date = parseDate(d.date));
+
+            // Set dimensions and margins
+            const margin = { top: 20, right: 30, bottom: 30, left: 40 };
+            const width = 800 - margin.left - margin.right;
+            const height = 400 - margin.top - margin.bottom;
+
+            // Create scales
+            const x = d3.scaleTime()
+                .domain(d3.extent(data, d => d.date))
+                .range([0, width]);
+
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, d => Math.max(d.price_h, d.price_j))])
+                .nice()
+                .range([height, 0]);
+
+            // Create SVG container
+            const svg = d3.select("#chart")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", `translate(${margin.left},${margin.top})`);
+
+            // Add X axis
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x).ticks(d3.timeYear.every(1)).tickFormat(d3.timeFormat("%Y")));
+
+            // Add Y axis
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+            // Line generator for price_h
+            const lineH = d3.line()
+                .x(d => x(d.date))
+                .y(d => y(+d.price_h));
+
+            // Line generator for price_j
+            const lineJ = d3.line()
+                .x(d => x(d.date))
+                .y(d => y(d.price_j));
+
+
+                // Append a tooltip div
+                const tooltip = d3.select("body")
+                    .append("div")
+                    .style("position", "absolute")
+                    .style("background", "lightgray")
+                    .style("padding", "5px")
+                    .style("border-radius", "5px")
+                    .style("display", "none");
+
+                // Add tooltip events to the price_h line
+                svg.select(".lineH")
+                    .on("mouseover", () => {
+                        tooltip.style("display", "block")
+                            .html("Line: Price H");
+                    })
+                    .on("mousemove", (event) => {
+                        tooltip.style("left", (event.pageX + 10) + "px")
+                            .style("top", (event.pageY - 20) + "px");
+                    })
+                    .on("mouseout", () => {
+                        tooltip.style("display", "none");
+                    });
+
+                // Add tooltip events to the price_j line
+                svg.select(".lineJ")
+                    .on("mouseover", () => {
+                        tooltip.style("display", "block")
+                            .html("Line: Price J");
+                    })
+                    .on("mousemove", (event) => {
+                        tooltip.style("left", (event.pageX + 10) + "px")
+                            .style("top", (event.pageY - 20) + "px");
+                    })
+                    .on("mouseout", () => {
+                        tooltip.style("display", "none");
+                    });
+
+            // Add price_h line
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 1.5)
+                .attr("d", lineH);
+
+            // Add price_j line
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "orange")
+                .attr("stroke-width", 1.5)
+                .attr("d", lineJ);
+
+            // Add legend
+            const legend = svg.append("g")
+                .attr("transform", `translate(${width - 120}, 10)`);
+
+            legend.append("rect")
+                .attr("width", 100)
+                .attr("height", 50)
+                .attr("fill", "white")
+                .attr("stroke", "black");
+
+            legend.append("line")
+                .attr("x1", 10)
+                .attr("y1", 15)
+                .attr("x2", 30)
+                .attr("y2", 15)
+                .attr("stroke", "steelblue")
+                .attr("stroke-width", 2);
+
+            legend.append("text")
+                .attr("x", 35)
+                .attr("y", 20)
+                .text("Price H")
+                .attr("font-size", "12px");
+
+            legend.append("line")
+                .attr("x1", 10)
+                .attr("y1", 30)
+                .attr("x2", 30)
+                .attr("y2", 30)
+                .attr("stroke", "orange")
+                .attr("stroke-width", 2);
+
+            legend.append("text")
+                .attr("x", 35)
+                .attr("y", 35)
+                .text("Price J")
+                .attr("font-size", "12px");
+        }
+
+        // Call the function to draw the chart
+        drawChart().catch(error => console.error("Error loading data:", error));
+    </script>
+</body>
+</html>

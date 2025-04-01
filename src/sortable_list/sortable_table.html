@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortable and Filterable Table</title>
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@12.1.0/dist/handsontable.full.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@12.1.0/dist/handsontable.full.min.css">
+  <style>
+    #table-container {
+      margin: 20px auto;
+      width: 90%;
+    }
+  </style>
+</head>
+<body>
+  <div id="table-container"></div>
+  <script>
+    const container = document.getElementById('table-container');
+
+    // Generate random data
+    const countries = ['USA', 'Germany', 'France', 'Japan', 'India'];
+    const manufacturers = ['Toyota', 'Ford', 'BMW', 'Honda', 'Tesla'];
+    const brands = ['Model X', 'Civic', '3 Series', 'Corolla', 'Mustang'];
+    const data = Array.from({ length: 20 }, (_, i) => [
+      false, // Checkbox
+      countries[Math.floor(Math.random() * countries.length)],
+      manufacturers[Math.floor(Math.random() * manufacturers.length)],
+      brands[Math.floor(Math.random() * brands.length)],
+      `A${Math.floor(Math.random() * 10000)}`, // Article ID
+      `P${Math.floor(Math.random() * 10000)}`  // Product ID
+    ]);
+
+    // Initialize Handsontable
+    const hot = new Handsontable(container, {
+      data,
+      colHeaders: ['Select', 'Country', 'Manufacturer', 'Brand', 'Article ID', 'Product ID'],
+      columns: [
+        { type: 'checkbox' },
+        { type: 'text' },
+        { type: 'text' },
+        { type: 'text' },
+        { type: 'text' },
+        { type: 'text' }
+      ],
+      colWidths: 300,
+      rowHeaders: true,
+      filters: true,
+      dropdownMenu: true,
+      manualRowMove: true,
+      columnSorting: true, // Enable column sorting
+      licenseKey: 'non-commercial-and-evaluation' // Free for non-commercial use
+    });
+  </script>
+</body>
+</html>
+      columnSorting: true, // Enable column sorting
+      licenseKey: 'non-commercial-and-evaluation' // Free for non-commercial use
+    });
+  </script>
+</body>
+</html>
